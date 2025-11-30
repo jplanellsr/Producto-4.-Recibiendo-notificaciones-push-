@@ -1,24 +1,66 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+// app/_layout.tsx
+import React from 'react';
+import { Stack, Link } from 'expo-router';
+import { Pressable, Text } from 'react-native';
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack
+      screenOptions={{
+        headerStyle: { backgroundColor: '#1f2937' },
+        headerTintColor: '#fff',
+        headerTitleAlign: 'center',
+      }}
+    >
+      <Stack.Screen
+        name="index"
+        options={{
+          title: 'Jugadores disponibles',
+        }}
+      />
+
+      <Stack.Screen
+        name="detalle"
+        options={{
+          title: 'Detalle del jugador',
+          headerRight: () => (
+            <Link href="/" asChild>
+              <Pressable style={{ paddingHorizontal: 8 }}>
+                <Text style={{ color: '#fff' }}>Inicio</Text>
+              </Pressable>
+            </Link>
+          ),
+        }}
+      />
+
+      <Stack.Screen
+        name="player"
+        options={{
+          title: 'Reproductor',
+          headerRight: () => (
+            <Link href="/" asChild>
+              <Pressable style={{ paddingHorizontal: 8 }}>
+                <Text style={{ color: '#fff' }}>Inicio</Text>
+              </Pressable>
+            </Link>
+          ),
+        }}
+      />
+
+      {/* 🔍 Nueva pantalla para ver la foto en zoom */}
+      <Stack.Screen
+        name="foto"
+        options={{
+          title: 'Foto del jugador',
+          headerRight: () => (
+            <Link href="/" asChild>
+              <Pressable style={{ paddingHorizontal: 8 }}>
+                <Text style={{ color: '#fff' }}>Inicio</Text>
+              </Pressable>
+            </Link>
+          ),
+        }}
+      />
+    </Stack>
   );
 }
