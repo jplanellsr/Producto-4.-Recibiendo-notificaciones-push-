@@ -1,0 +1,60 @@
+{
+  "jugadores": {
+    "jugadores": {
+      "7eCHkd1oPgxXvmaI1XB9": {
+        "nombre": "juan",
+        "apellidos": "Perez",
+        "edad": 25,
+        "altura": 180,
+        "posicion": "base",
+        "photoUrl": "https://images.pexels.com/photos/974521/pexels-photo-974521.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "videoUrl": "https://www.youtube.com/embed/CXLMO8fZO5o?si=PctwQV3PCTMxdxq-"
+      },
+      "92v3dMVp6QHvPq5GveCB":{
+        "nombre": "Ramón",
+        "apellidos": "Román",
+        "edad": 36,
+        "altura": 198,
+        "posicion": "Pivot",
+        "photoUrl": "https://images.pexels.com/photos/974501/pexels-photo-974501.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "videoUrl": "https://www.youtube.com/embed/z1qNWhzA0HA?si=7ZkCkxp0ecpcn06l"
+      },
+      "BLX3aHCJprb90lLViNn5":{
+         "nombre": "Jonh",
+        "apellidos": "Watson",
+        "edad": 36,
+        "altura": 185,
+        "posicion": "base",
+        "photoUrl": "https://images.pexels.com/photos/974531/pexels-photo-974531.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "videoUrl": "https://www.youtube.com/embed/nLMq9DLvDxc?si=Q5c-9nS80q0ngNUQ"
+      },
+      "DTXWvAZweuzIY2WhxmVk":{
+         "nombre": "John",
+        "apellidos": "Dawids",
+        "edad": 34,
+        "altura": 205,
+        "posicion": "Alero",
+        "photoUrl": "https://images.pexels.com/photos/974532/pexels-photo-974532.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "videoUrl": "https://www.youtube.com/embed/R5GzVPZW8G0?si=xrDjkoR68CX2IZ-a"
+          },
+      "Io748tqVWDFX1ItGBLSI":{
+         "nombre": "Robert",
+        "apellidos": "Smith",
+        "edad": 25,
+        "altura": 195,
+        "posicion": "Pivot",
+        "photoUrl": "https://images.pexels.com/photos/974530/pexels-photo-974530.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "videoUrl": "https://www.youtube.com/embed/mai8kYTxXQQ?si=qSwV5X1Dgm9D-aEH"
+          },
+      "Io748tqVWDFX1ItGBLSI":{
+         "nombre": "Pepe",
+        "apellidos": "Rodriguez",
+        "edad": 34,
+        "altura": 210,
+        "posicion": "Pivot",
+        "photoUrl": "https://images.pexels.com/photos/974520/pexels-photo-974520.jpeg?auto=compress&cs=tinysrgb&w=400",
+        "videoUrl": "https://www.youtube.com/embed/T4R9Jc96rtQ?si=HPbuvXDTVJcPdfpC"
+      }
+    }
+  }
+}
