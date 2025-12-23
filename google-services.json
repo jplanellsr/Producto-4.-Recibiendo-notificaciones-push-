@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "105973429774",
+    "project_id": "recibiendo-notificaciones-push",
+    "storage_bucket": "recibiendo-notificaciones-push.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105973429774:android:bd497f52db63d0ab2a2e5f",
+        "android_client_info": {
+          "package_name": "com.anonymous.eventpersonalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANf-7OFSpCKXn2n87sXpl136m0607h2Io"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

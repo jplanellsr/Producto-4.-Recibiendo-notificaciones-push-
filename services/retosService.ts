@@ -1,5 +1,6 @@
 // services/retosService.ts
 import { get, ref } from 'firebase/database';
+import { getApp } from 'firebase/app';
 import { db } from '../firebaseConfig';
 
 export type Player = {
@@ -16,9 +17,17 @@ export type Player = {
 export const getRetosOnce = async (): Promise<Player[]> => {
   console.log('➡️ Llamando a Firebase ruta "jugadores/jugadores" ...');
 
+  // ✅ Prueba definitiva: ¿a qué proyecto/DB está apuntando ESTA lectura?
+  const app = getApp();
+  console.log('🔥 Firebase projectId:', app.options.projectId);
+  console.log('🔥 Firebase databaseURL:', app.options.databaseURL);
+  console.log('🔥 DB app projectId:', db.app.options.projectId);
+  console.log('🔥 DB app databaseURL:', db.app.options.databaseURL);
+
   const snapshot = await get(ref(db, 'jugadores/jugadores'));
 
   if (!snapshot.exists()) {
+    console.log('⚠️ No existe la ruta jugadores/jugadores en esta DB.');
     return [];
   }
 

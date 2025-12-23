@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "recibiendo-notificaciones-push",
+    "Firebase ok": "event-personal",
+    "recibiendo-notificaciones-push": "recibiendo-notificaciones-push"
+  },
+  "targets": {},
+  "etags": {}
+}
